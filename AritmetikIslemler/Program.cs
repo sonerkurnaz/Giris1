@@ -160,7 +160,29 @@ namespace AritmetikIslemler
 
 
             #region Ornek5
-            //
+            //string ad, soyad, email;
+            //Console.Write("Adınız: ");
+            //ad = Console.ReadLine();
+
+            //Console.Write("Soyadınız: ");
+            //soyad = Console.ReadLine();
+            //email = ad + "." + soyad + "@gmail.com";
+            //Console.WriteLine("Email adresiniz: " + email);
+
+            #endregion
+            #region Ornek6
+            string input;
+             Console.WriteLine("1.Sayıyı giriniz: ");
+            input = Console.ReadLine();
+            sayi1 = Convert.ToInt32(input);
+
+            Console.WriteLine("2.Sayıyı giriniz: ");
+            input = Console.ReadLine();
+            sayi2 = Convert.ToInt32(input);
+            if (sayi2 != 0)
+            {
+                float bolum=sayi1 / (float)sayi2;
+            }
             #endregion
 
 
