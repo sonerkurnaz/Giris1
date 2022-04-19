@@ -36,13 +36,13 @@ namespace KararYapilari
             //Diğer türlü hangisinin hatalı oldgugunu ekrana yazsın
             //kullanıcı adi: admin, parola: qweasd
 
-            string username, password;
+            //string username, password;
 
-            Console.Write("Username: ");
-            username = Console.ReadLine();
+            //Console.Write("Username: ");
+            //username = Console.ReadLine();
 
-            Console.Write("Password: ");
-            password = Console.ReadLine();
+            //Console.Write("Password: ");
+            //password = Console.ReadLine();
             ////Normalde olmasi gereken
             ////if (username == "Admin" && password == "qweasd")
             ////{
@@ -71,22 +71,101 @@ namespace KararYapilari
              * kod yanlıs şifre yanlıs
              * kod yanlıs sifre dogru
              */
-            if (username == "Admin" && password == "qweasd")
-            {
-                Console.WriteLine("Hoşgeldiniz.");
-            }
-            else if (username == "Admin" && password != "qweasd")
-            {
-                Console.WriteLine("Username dogru. parola yanlış");
-            }
-            else if (username != "Admin" && password != "qweasd")
-            {
-                Console.WriteLine("Bütün bilgiler yanlış.");
-            }
-            else if (username != "Admin" && password == "qweasd")
-            {
-                Console.WriteLine("Username yanlış");
-            }
+            //if (username == "Admin" && password == "qweasd")
+            //{
+            //    Console.WriteLine("Hoşgeldiniz.");
+            //}
+            //else if (username == "Admin" && password != "qweasd")
+            //{
+            //    Console.WriteLine("Username dogru. parola yanlış");
+            //}
+            //else if (username != "Admin" && password != "qweasd")
+            //{
+            //    Console.WriteLine("Bütün bilgiler yanlış.");
+            //}
+            //else if (username != "Admin" && password == "qweasd")
+            //{
+            //    Console.WriteLine("Username yanlış");
+            //}
+
+            #endregion
+            #region Ornek2
+            /*Girilen not 0-30 araligi ise "FF" 30-50 araligi
+             * "DD" 50-70 "BB" 70-100 "AA" aldınız şeklinde
+             * kullanıcıyı uyarınız..
+             */
+            //int not;
+            //Console.Write("Notunuzu giriniz: ");
+            //not = int.Parse(Console.ReadLine());
+
+            //if (not <= 30)
+            //{
+            //    Console.WriteLine("Harf Notunuz:FF");
+            //}
+            //else if (not >= 30 && not < 50)
+            //{
+            //    Console.WriteLine("Harf Notunuz:DD");
+            //}
+            //else if (not >= 50 && not < 70)
+            //{
+            //    Console.WriteLine("Harf Notunuz:BB");
+            //}
+            //else if (not >= 70 && not < 100)
+            //{
+            //    Console.WriteLine("Harf Notunuz:AA");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Böyle bir not yok");
+            //}
+
+
+
+            #endregion
+            #region Ornek3
+            /*Disaridan urun adi girilecek, kasiyer bize ürünün hangi reyonda oldugunu soyleyecek..
+             * domates,biber,patlican=>sebze reyonu
+             * diş macunu,parfüm,sampuan=kozmetik
+             * cep tel, bilgisayar, ses sistemi=tekno.
+             * baska bi ürüne bizde yok uyarısı
+             */
+            //string input;
+            //Console.WriteLine("Ne ariyorsunuz?");
+            //input = Console.ReadLine();
+
+            //if (input == "Domates" || input == "Biber" || input == "Patlıcan")
+            //{
+            //    Console.WriteLine("Lütfen sebze reyonuna gidiniz.");
+            //}
+            //else if (input == "Diş Macunu" || input == "Parfüm" || input == "Şampuan")
+            //{
+            //    Console.WriteLine("Lütfen kozmetik reyonuna gidiniz.");
+            //}
+            //else if (input == "Cep Telefonu" || input == "Bilgisayar" || input == "Ses Sistemi")
+            //{
+            //    Console.WriteLine("Lütfen Teknoloji reyonuna gidiniz.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Bu ürün bizde yok!");
+            //}
+
+
+
+
+
+            #endregion
+            #region Ornek4
+            /*
+             * Dısarıdan siparis alınacak kitap miktari girilsin.
+             * siparis sayısı 20'den azsa toplam ucretten %5,
+             * 20-50 aralıgında ise %10, 50-100 araliği ise %15,
+             * 100den fazla ise %25 indirim yapılsın
+             * kitabın birim fiyatı =5 TL
+             * amac= odenecek tutarı kullanıcıya göstermek
+             */
+            #endregion
+            #region Odev
 
             #endregion
         }
