@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ilkConsole", "ilkConsole\ilkConsole.csproj", "{A3D3F9F8-C141-4777-BADA-A82CDC6C8E50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AritmetikIslemler", "AritmetikIslemler\AritmetikIslemler.csproj", "{3A2A48AD-1C99-43E6-BB38-51606FF54DD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AritmetikIslemler", "AritmetikIslemler\AritmetikIslemler.csproj", "{3A2A48AD-1C99-43E6-BB38-51606FF54DD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tryCatch", "tryCatch\tryCatch.csproj", "{4551D623-F103-4363-855A-F830DEE9A967}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3A2A48AD-1C99-43E6-BB38-51606FF54DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A2A48AD-1C99-43E6-BB38-51606FF54DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A2A48AD-1C99-43E6-BB38-51606FF54DD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4551D623-F103-4363-855A-F830DEE9A967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4551D623-F103-4363-855A-F830DEE9A967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4551D623-F103-4363-855A-F830DEE9A967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4551D623-F103-4363-855A-F830DEE9A967}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

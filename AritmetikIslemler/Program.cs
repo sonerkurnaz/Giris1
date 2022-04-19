@@ -120,8 +120,8 @@ namespace AritmetikIslemler
             /*
              * Dişaridan girilen bir sayının 10 eksiğinin 20 fazlasının 2'ye bölümünden kalanın karesi kactır?
              */
-            Console.WriteLine();
-            int sayi1, sayi2, bolumkalan;
+            //Console.WriteLine();
+            //int sayi1, sayi2, bolumkalan;
             //Console.WriteLine("Sayı giriniz.");
             //sayi1 = Convert.ToInt32(Console.ReadLine());
 
@@ -171,18 +171,18 @@ namespace AritmetikIslemler
 
             #endregion
             #region Ornek6
-            string input;
-             Console.WriteLine("1.Sayıyı giriniz: ");
-            input = Console.ReadLine();
-            sayi1 = Convert.ToInt32(input);
+            //string input;
+            // Console.WriteLine("1.Sayıyı giriniz: ");
+            //input = Console.ReadLine();
+            //sayi1 = Convert.ToInt32(input);
 
-            Console.WriteLine("2.Sayıyı giriniz: ");
-            input = Console.ReadLine();
-            sayi2 = Convert.ToInt32(input);
-            if (sayi2 != 0)
-            {
-                float bolum=sayi1 / (float)sayi2;
-            }
+            //Console.WriteLine("2.Sayıyı giriniz: ");
+            //input = Console.ReadLine();
+            //sayi2 = Convert.ToInt32(input);
+            //if (sayi2 != 0)
+            //{
+            //    float bolum=sayi1 / (float)sayi2;
+            //}
             #endregion
 
 
@@ -195,7 +195,7 @@ namespace AritmetikIslemler
 
 
 
-            Console.WriteLine("Hello World!");
+           // Console.WriteLine("Hello World!");
         }
     }
 }
