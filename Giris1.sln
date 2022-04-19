@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AritmetikIslemler", "Aritme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tryCatch", "tryCatch\tryCatch.csproj", "{4551D623-F103-4363-855A-F830DEE9A967}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KararYapilari", "KararYapilari\KararYapilari.csproj", "{5FD3F50A-8109-4479-AED4-52585ED96F20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4551D623-F103-4363-855A-F830DEE9A967}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4551D623-F103-4363-855A-F830DEE9A967}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4551D623-F103-4363-855A-F830DEE9A967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FD3F50A-8109-4479-AED4-52585ED96F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FD3F50A-8109-4479-AED4-52585ED96F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FD3F50A-8109-4479-AED4-52585ED96F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FD3F50A-8109-4479-AED4-52585ED96F20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
