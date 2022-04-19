@@ -166,7 +166,72 @@ namespace KararYapilari
              */
             #endregion
             #region Odev
+            /*
+             Kullanicidan 2 sayi alin
+             Birde Ekrana [+,-,/,*] 
+            Bunlardan hangisini girdi ise ona gore işlem yapin
+             */
+            //int sayi1, sayi2;
+            //string input;
+            //Console.Write("1.Sayıyı giriniz: ");
+            //sayi1 = int.Parse(Console.ReadLine());
 
+            //Console.Write("2.Sayıyı giriniz: ");
+            //sayi2 = int.Parse(Console.ReadLine());
+
+            //Console.Write("İşlem seçiniz: (+,-,/,*): ");
+            //input =  Console.ReadLine();
+            //if(input == "+")
+            //{
+            //    Console.WriteLine("Sonuç: " +(sayi1+sayi2));
+            //}else if(input == "-")
+            //{
+            //    Console.WriteLine("Sonuç: " + (sayi1 - sayi2));
+            //}else if (input == "*")
+            //{
+            //    Console.WriteLine("Sonuç: " + (sayi1 * sayi2));
+            //}else if (input == "/")
+            //{
+            //    Console.WriteLine("Sonuç: " + (sayi1 / sayi2));
+            //}else
+            //{ Console.WriteLine("Yanlış girdi."); }
+
+
+            /*
+             Soru 2: Ekrandan girilen mevsime gore aylari bastirin.
+             */
+            string input;
+            Console.Write("Mevsim giriniz: ");
+            input = Console.ReadLine();
+
+            if (input == "Kış" || input == "KIŞ" || input == "kış")
+            {
+                Console.WriteLine("ARALIK,OCAK,ŞUBAT");
+            }
+            else if (input == "İlkbahar" || input == "İLKBAHAR" || input == "ilkbahar")
+            {
+                Console.WriteLine("MART,NİSAN,MAYIS");
+            }
+            else if (input == "Yaz" || input == "YAZ" || input == "yaz")
+            {
+                Console.WriteLine("HAZİRAN,TEMMUZ,AĞUSTOS");
+            }
+            else if (input == "Sonbahar" || input == "SONBAHAR" || input == "sonbahar")
+            {
+                Console.WriteLine("EYLÜL,EKİM,KASIM");
+            }
+            else
+            {
+                Console.WriteLine("Böyle bir mevsim yok!");
+            }
+            /*
+             Ekrandan suyun sicakligini alin. Ve Kati ,sivi ,Gaz halini belirleyin
+             */
+
+            /*
+             Girilen bir tam sayinin kaç basamakli oldugunu ekrana yaziniz.
+             
+             */
             #endregion
         }
     }
