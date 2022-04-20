@@ -87,9 +87,14 @@ namespace ForDongusu
             Console.WriteLine("Haftanın kacıncı günü"+DateTime.Now.DayOfWeek);
             Console.WriteLine("Yılın kacıncı günü"+DateTime.Now.DayOfYear);
 
-            for (int i = 2010; i < DateTime.Now.Year; i++)
+            for (int i = 2010; i <= DateTime.Now.Year; i++)
             {
-                //pandemi yıllarını es geçelim
+                //pandemi yıllarını es geçelim 2020-2021
+                
+                if (!(i==2020 || i==2021))
+                {
+                    Console.WriteLine(i);
+                }
             }
             #endregion
 
