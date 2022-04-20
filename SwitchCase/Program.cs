@@ -86,28 +86,28 @@ namespace SwitchCase
             //}
             #endregion
             #region Ornek
-            Console.Write("Kullanıcı Adını giriniz: ");
-            string kullaniciAdi=Console.ReadLine();
+            //Console.Write("Kullanıcı Adını giriniz: ");
+            //string kullaniciAdi=Console.ReadLine();
 
-            Console.Write("Parola giriniz: ");
-            string parola = Console.ReadLine();
-            switch (kullaniciAdi)
-            {
-                case "bilgeadam":
-                    switch (parola)
-                    {
-                        case "1234":
-                            Console.WriteLine("Kullanıcı adı ve parola dogrudur.");
-                            break;
-                        default:
-                            Console.WriteLine("Kullanıcı Adı doğru, Parola yanlış.");
-                            break;
-                    }
-                    break;
-                default:
-                    Console.WriteLine("Kullanıcı adın yanlış.");
-                    break;
-            }
+            //Console.Write("Parola giriniz: ");
+            //string parola = Console.ReadLine();
+            //switch (kullaniciAdi)
+            //{
+            //    case "bilgeadam":
+            //        switch (parola)
+            //        {
+            //            case "1234":
+            //                Console.WriteLine("Kullanıcı adı ve parola dogrudur.");
+            //                break;
+            //            default:
+            //                Console.WriteLine("Kullanıcı Adı doğru, Parola yanlış.");
+            //                break;
+            //        }
+            //        break;
+            //    default:
+            //        Console.WriteLine("Kullanıcı adın yanlış.");
+            //        break;
+            //}
             #endregion
         }
     }
