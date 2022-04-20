@@ -164,6 +164,28 @@ namespace KararYapilari
              * kitabın birim fiyatı =5 TL
              * amac= odenecek tutarı kullanıcıya göstermek
              */
+            //int kitapAdeti, fiyat = 5;
+            //float indirim = 0;
+            //Console.WriteLine("Kaç adet alacaksınız? ");
+            //kitapAdeti = int.Parse(Console.ReadLine());
+
+            //if (kitapAdeti < 20)
+            //{
+            //    indirim = fiyat * kitapAdeti * 5 / 100;
+            //}
+            //else if (kitapAdeti >= 20 && kitapAdeti < 50)
+            //{
+            //    indirim = fiyat * kitapAdeti * 15 / 100;
+            //}
+            //else if (kitapAdeti >= 50 && kitapAdeti < 100)
+            //{
+            //    indirim = fiyat * kitapAdeti * 25 / 100;
+            //}
+            //else if (kitapAdeti >= 100)
+            //    Console.WriteLine($"Normal tutar :{kitapAdeti * fiyat}");
+            //Console.WriteLine($"İndirim tutarı :{indirim}");
+            //Console.WriteLine($"Ödenecek tutar :{(kitapAdeti * fiyat) - indirim}");
+
             #endregion
             #region Odev
             /*
@@ -180,50 +202,57 @@ namespace KararYapilari
             //sayi2 = int.Parse(Console.ReadLine());
 
             //Console.Write("İşlem seçiniz: (+,-,/,*): ");
-            //input =  Console.ReadLine();
-            //if(input == "+")
+            //input = Console.ReadLine();
+            //if (input == "+")
             //{
-            //    Console.WriteLine("Sonuç: " +(sayi1+sayi2));
-            //}else if(input == "-")
+            //    //Console.WriteLine("Sonuç: " + (sayi1 + sayi2));
+            //    Console.WriteLine($"Sonuç: {sayi1 + sayi2}");
+            //}
+            //else if (input == "-")
             //{
             //    Console.WriteLine("Sonuç: " + (sayi1 - sayi2));
-            //}else if (input == "*")
+            //}
+            //else if (input == "*")
             //{
             //    Console.WriteLine("Sonuç: " + (sayi1 * sayi2));
-            //}else if (input == "/")
+            //}
+            //else if (input == "/")
             //{
             //    Console.WriteLine("Sonuç: " + (sayi1 / sayi2));
-            //}else
-            //{ Console.WriteLine("Yanlış girdi."); }
+            //}
+            //else
+            //{ 
+            //    Console.WriteLine("Yanlış girdi."); 
+            //}
 
 
             /*
              Soru 2: Ekrandan girilen mevsime gore aylari bastirin.
              */
-            string input;
-            Console.Write("Mevsim giriniz: ");
-            input = Console.ReadLine();
+            //string input;
+            //Console.Write("Mevsim giriniz: ");
+            //input = Console.ReadLine();
 
-            if (input == "Kış" || input == "KIŞ" || input == "kış")
-            {
-                Console.WriteLine("ARALIK,OCAK,ŞUBAT");
-            }
-            else if (input == "İlkbahar" || input == "İLKBAHAR" || input == "ilkbahar")
-            {
-                Console.WriteLine("MART,NİSAN,MAYIS");
-            }
-            else if (input == "Yaz" || input == "YAZ" || input == "yaz")
-            {
-                Console.WriteLine("HAZİRAN,TEMMUZ,AĞUSTOS");
-            }
-            else if (input == "Sonbahar" || input == "SONBAHAR" || input == "sonbahar")
-            {
-                Console.WriteLine("EYLÜL,EKİM,KASIM");
-            }
-            else
-            {
-                Console.WriteLine("Böyle bir mevsim yok!");
-            }
+            //if (input == "Kış" || input == "KIŞ" || input == "kış")
+            //{
+            //    Console.WriteLine("ARALIK,OCAK,ŞUBAT");
+            //}
+            //else if (input == "İlkbahar" || input == "İLKBAHAR" || input == "ilkbahar")
+            //{
+            //    Console.WriteLine("MART,NİSAN,MAYIS");
+            //}
+            //else if (input == "Yaz" || input == "YAZ" || input == "yaz")
+            //{
+            //    Console.WriteLine("HAZİRAN,TEMMUZ,AĞUSTOS");
+            //}
+            //else if (input == "Sonbahar" || input == "SONBAHAR" || input == "sonbahar")
+            //{
+            //    Console.WriteLine("EYLÜL,EKİM,KASIM");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Böyle bir mevsim yok!");
+            //}
             /*
              Ekrandan suyun sicakligini alin. Ve Kati ,sivi ,Gaz halini belirleyin
              */
