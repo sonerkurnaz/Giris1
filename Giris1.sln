@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SansOyunlari", "SansOyunlar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraySinifi", "ArraySinifi\ArraySinifi.csproj", "{C7DF3B14-D859-4086-8DF2-392BD96D3EA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayList", "ArrayList\ArrayList.csproj", "{3C91304D-4F6E-4FEA-8EE0-8E22FC732C20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array_List", "ArrayList\Array_List.csproj", "{3C91304D-4F6E-4FEA-8EE0-8E22FC732C20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericList", "GenericList\GenericList.csproj", "{A671FA5D-2A34-4873-A6C3-E4970A2B01DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{3C91304D-4F6E-4FEA-8EE0-8E22FC732C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C91304D-4F6E-4FEA-8EE0-8E22FC732C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C91304D-4F6E-4FEA-8EE0-8E22FC732C20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A671FA5D-2A34-4873-A6C3-E4970A2B01DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A671FA5D-2A34-4873-A6C3-E4970A2B01DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A671FA5D-2A34-4873-A6C3-E4970A2B01DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A671FA5D-2A34-4873-A6C3-E4970A2B01DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,6 +103,7 @@ Global
 		{3A22F87A-06B4-4CD2-BF36-8D100B48F286} = {04F8E201-60EE-4088-979C-09CAAF9781C3}
 		{C7DF3B14-D859-4086-8DF2-392BD96D3EA9} = {04F8E201-60EE-4088-979C-09CAAF9781C3}
 		{3C91304D-4F6E-4FEA-8EE0-8E22FC732C20} = {04F8E201-60EE-4088-979C-09CAAF9781C3}
+		{A671FA5D-2A34-4873-A6C3-E4970A2B01DA} = {04F8E201-60EE-4088-979C-09CAAF9781C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3BD75445-8466-47EB-9889-1A9B5FEAAB5F}
