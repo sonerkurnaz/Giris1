@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array_List", "ArrayList\Arr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericList", "GenericList\GenericList.csproj", "{A671FA5D-2A34-4873-A6C3-E4970A2B01DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinOrnek1", "WinOrnek1\WinOrnek1.csproj", "{8043C9F7-64F6-46BB-A915-7BC89ABB8420}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,10 @@ Global
 		{A671FA5D-2A34-4873-A6C3-E4970A2B01DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A671FA5D-2A34-4873-A6C3-E4970A2B01DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A671FA5D-2A34-4873-A6C3-E4970A2B01DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8043C9F7-64F6-46BB-A915-7BC89ABB8420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8043C9F7-64F6-46BB-A915-7BC89ABB8420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8043C9F7-64F6-46BB-A915-7BC89ABB8420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8043C9F7-64F6-46BB-A915-7BC89ABB8420}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,6 +110,7 @@ Global
 		{C7DF3B14-D859-4086-8DF2-392BD96D3EA9} = {04F8E201-60EE-4088-979C-09CAAF9781C3}
 		{3C91304D-4F6E-4FEA-8EE0-8E22FC732C20} = {04F8E201-60EE-4088-979C-09CAAF9781C3}
 		{A671FA5D-2A34-4873-A6C3-E4970A2B01DA} = {04F8E201-60EE-4088-979C-09CAAF9781C3}
+		{8043C9F7-64F6-46BB-A915-7BC89ABB8420} = {04F8E201-60EE-4088-979C-09CAAF9781C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3BD75445-8466-47EB-9889-1A9B5FEAAB5F}
