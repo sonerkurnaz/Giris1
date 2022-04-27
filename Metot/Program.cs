@@ -11,6 +11,7 @@ namespace Metot
             Console.WriteLine(toplam);
             EkranaYaz("akdsjfad");
             Console.WriteLine("Hello World!");
+            SifreUret();
         }
         /// <summary>
         /// verilen string tipinden mesajı consola yazar
@@ -46,6 +47,18 @@ namespace Metot
         {
             return sayi1 + sayi2;
         }
+        // 1- Rastgele Sifre üreten metod yaziniz. 
+        // En az 1 tane buyuk harf , en az 1 sayi olacak ve
+        // en az 8 karakter uzunlugunda olacak
+        public static void SifreUret()
+        {
+            Random rnd = new Random();
+            int sayi = rnd.Next(99999999);
+            Console.WriteLine(sayi);
+           
+        }
+
+        // Verilen sayinin asal sayi olup olmadigini belirleyen metod 
 
 
     }
