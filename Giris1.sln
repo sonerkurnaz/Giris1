@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TarihMetodlari", "TarihMeto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatematikMetodlari", "MatematikMetodlari\MatematikMetodlari.csproj", "{385D2591-6BF0-4289-8BEC-72835A6CCA6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System_IO", "System_IO\System_IO.csproj", "{8EF6DE3C-9C5F-446D-A024-4D66FC1FB65E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{385D2591-6BF0-4289-8BEC-72835A6CCA6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{385D2591-6BF0-4289-8BEC-72835A6CCA6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{385D2591-6BF0-4289-8BEC-72835A6CCA6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EF6DE3C-9C5F-446D-A024-4D66FC1FB65E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF6DE3C-9C5F-446D-A024-4D66FC1FB65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF6DE3C-9C5F-446D-A024-4D66FC1FB65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF6DE3C-9C5F-446D-A024-4D66FC1FB65E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -162,6 +168,7 @@ Global
 		{096DC0AC-6BFE-4032-9013-C1F4F6F2DF94} = {50BB6B81-9C79-48A3-84E7-A686C58FC3FD}
 		{5B7A55A9-85FA-4ACC-90B9-72B3D497292F} = {50BB6B81-9C79-48A3-84E7-A686C58FC3FD}
 		{385D2591-6BF0-4289-8BEC-72835A6CCA6A} = {50BB6B81-9C79-48A3-84E7-A686C58FC3FD}
+		{8EF6DE3C-9C5F-446D-A024-4D66FC1FB65E} = {50BB6B81-9C79-48A3-84E7-A686C58FC3FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3BD75445-8466-47EB-9889-1A9B5FEAAB5F}
