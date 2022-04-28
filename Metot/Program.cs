@@ -11,7 +11,8 @@ namespace Metot
             Console.WriteLine(toplam);
             EkranaYaz("akdsjfad");
             Console.WriteLine("Hello World!");
-            SifreUret();
+            
+            
         }
         /// <summary>
         /// verilen string tipinden mesajı consola yazar
@@ -52,14 +53,18 @@ namespace Metot
         // en az 8 karakter uzunlugunda olacak
         public static void SifreUret()
         {
+            
             Random rnd = new Random();
-            int sayi = rnd.Next(99999999);
+            int sayi = rnd.Next();
             Console.WriteLine(sayi);
-           
+
+            
+
         }
 
-        // Verilen sayinin asal sayi olup olmadigini belirleyen metod 
 
+        // Verilen sayinin asal sayi olup olmadigini belirleyen metod 
+        
 
     }
 }
