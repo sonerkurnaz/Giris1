@@ -15,9 +15,30 @@ namespace PersonelTakip
     {
         string ad, soyad, tcno, gsm, email;
         DateTime dogumTarihi;
+        List<string> Adlar = new List<string>();
+        List<string> Soyadlar = new List<string>();
+        List<string> TcNolar = new List<string>();
+        List<string> Gsmler = new List<string>();
+        List<string> Emailler = new List<string>();
+        List<DateTime> DogumTarihleri = new List<DateTime>();
         public PersonelKayit()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string[] satirlar = File.ReadAllLines("Personel.txt");
+            foreach (string satir in satirlar)
+            {
+                string[] veriler = satir.Split(";");
+                Adlar.Add(veriler[0]);
+                Soyadlar.Add(veriler[1]);
+                TcNolar.Add(veriler[2]);
+                Gsmler.Add(veriler[3]);
+                Emailler.Add(veriler[4]);
+                DogumTarihleri.Add(Convert.ToDateTime(veriler[5]));
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -29,7 +50,7 @@ namespace PersonelTakip
         {
             #region Ekrandan degerleri okuma
 
-            
+
             ad = txtAd.Text;
             soyad = txtSoyad.Text;
             gsm = txtGsm.Text;
@@ -79,17 +100,17 @@ namespace PersonelTakip
             StreamWriter sw = File.AppendText(path);
             sw.WriteLine(ad + ";" + soyad + ";" + gsm + ";" + email + ";" + tcno);
             sw.Close();
-            
+
             #endregion
 
-            
+
         }
 
         private void PersonelKayit_Load(object sender, EventArgs e)
         {
 
         }
-        
+
         public void FormuTemizle()
         {
             txtAd.Text = "";
