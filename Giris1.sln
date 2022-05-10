@@ -53,15 +53,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatematikMetodlari", "Matem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System_IO", "System_IO\System_IO.csproj", "{8EF6DE3C-9C5F-446D-A024-4D66FC1FB65E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutParametre", "OutParametre\OutParametre.csproj", "{5DCCCDEF-2CBD-4028-A744-91B7AE18EFEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutParametre", "OutParametre\OutParametre.csproj", "{5DCCCDEF-2CBD-4028-A744-91B7AE18EFEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefParametre", "RefParametre\RefParametre.csproj", "{4540C700-CEF0-48AB-8C63-2BCAC01FDB06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefParametre", "RefParametre\RefParametre.csproj", "{4540C700-CEF0-48AB-8C63-2BCAC01FDB06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursiveMetodlar", "RecursiveMetodlar\RecursiveMetodlar.csproj", "{578455BA-722A-407B-9977-8BDC54BC0A5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursiveMetodlar", "RecursiveMetodlar\RecursiveMetodlar.csproj", "{578455BA-722A-407B-9977-8BDC54BC0A5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemIOWinForm", "SystemIOWinForm\SystemIOWinForm.csproj", "{E18811A5-2D78-42A6-98DE-F43081D7A2C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SystemIOWinForm", "SystemIOWinForm\SystemIOWinForm.csproj", "{E18811A5-2D78-42A6-98DE-F43081D7A2C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinMayinTarlasi", "WinMayinTarlasi\WinMayinTarlasi.csproj", "{C2F226DC-C81E-432B-944C-426A168A6576}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinMayinTarlasi", "WinMayinTarlasi\WinMayinTarlasi.csproj", "{C2F226DC-C81E-432B-944C-426A168A6576}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab", "Lab", "{027822C9-C883-42BF-BDFF-64E3D8A63D33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonelTakip", "PersonelTakip\PersonelTakip.csproj", "{F5A80A00-D2FB-44D2-B5D1-4F1CF8E6823D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -177,6 +181,10 @@ Global
 		{C2F226DC-C81E-432B-944C-426A168A6576}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2F226DC-C81E-432B-944C-426A168A6576}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2F226DC-C81E-432B-944C-426A168A6576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A80A00-D2FB-44D2-B5D1-4F1CF8E6823D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A80A00-D2FB-44D2-B5D1-4F1CF8E6823D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A80A00-D2FB-44D2-B5D1-4F1CF8E6823D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A80A00-D2FB-44D2-B5D1-4F1CF8E6823D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -204,6 +212,7 @@ Global
 		{578455BA-722A-407B-9977-8BDC54BC0A5D} = {50BB6B81-9C79-48A3-84E7-A686C58FC3FD}
 		{E18811A5-2D78-42A6-98DE-F43081D7A2C0} = {50BB6B81-9C79-48A3-84E7-A686C58FC3FD}
 		{C2F226DC-C81E-432B-944C-426A168A6576} = {50BB6B81-9C79-48A3-84E7-A686C58FC3FD}
+		{F5A80A00-D2FB-44D2-B5D1-4F1CF8E6823D} = {027822C9-C883-42BF-BDFF-64E3D8A63D33}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3BD75445-8466-47EB-9889-1A9B5FEAAB5F}

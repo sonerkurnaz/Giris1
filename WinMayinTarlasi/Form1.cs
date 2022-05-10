@@ -37,17 +37,26 @@ namespace WinMayinTarlasi
 
             for (int i = 0; i < 154; i++)
             {
+                // PictureBox
                 PictureBox box = new PictureBox();
                 box.Height = 30;
                 box.Width = 30;
                 box.Name = "box" + i;
                 box.BackColor = Color.Bisque;
 
+
+                //Eger olusan i degeri mayinlar icerisinde varsa 
+                // Tag property'sini true yap
                 if (mayinlar.Contains(i))
                     box.Tag = true;
                 else
                     box.Tag = false;
+
+                //Butun picturBox'larin click event'tini ayni
+                //metoda baglar.
                 box.Click += Box_Click;
+
+                //flowlayoutpanel icerisine ekler 
                 flowLayoutPanel1.Controls.Add(box);
             }
 
@@ -60,13 +69,24 @@ namespace WinMayinTarlasi
         {
             //sender objesi kimin tarafindan tiklandigi bilgisini tasir.
             PictureBox box = (PictureBox)sender;
-            MessageBox.Show(box.Name + " Mayinlimi =" + box.Tag);
+            if ((bool)box.Tag == true)
+            {
+                MessageBox.Show(box.Name + " Mayinlimi =" + box.Tag);
+
+            }
+            else
+            {
+                box.BackColor = Color.Black;
+
+            }
+
+            //MessageBox.Show(box.Name + " Mayinlimi ="+ box.Tag);
 
 
         }
 
 
 
-    
+
     }
 }
