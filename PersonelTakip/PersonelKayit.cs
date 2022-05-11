@@ -11,59 +11,50 @@ using System.Windows.Forms;
 
 namespace PersonelTakip
 {
+    struct Adres
+    {
+        public string il;
+        public string ilce;
+        public string cadde;
+        public string sokak;
+        public string numara;
+
+    }
+    struct Kisi
+    {
+        public string Ad;
+        public string Soyad;
+        public string TcNo;
+        public string Gsm;
+        public string Email;
+        public DateTime DogumTarihi;
+        public Adres Adres;
+
+    }
+
     public partial class PersonelKayit : Form
     {
-        //Ekrandan okunacak degerleri tutan degiskenler
         string ad, soyad, tcno, gsm, email;
+        DateTime dogumTarihi;
+
 
         List<string> Adlar = new List<string>();
         List<string> Soyadlar = new List<string>();
         List<string> TcNolar = new List<string>();
-        List<string> GsmLer = new List<string>();
+        List<string> Gsmler = new List<string>();
         List<string> Emailler = new List<string>();
         List<DateTime> DogumTarihleri = new List<DateTime>();
 
         List<Kisi> Kisiler = new List<Kisi>();
 
         /*
-         
-         Struct Tanimlamasi
+         struck tanımlaması
          */
-        struct Adres
-        {
-            public string il;
-            public string ilce;
-            public string cadde;
-            public string sokak;
-            public string numara;
-        }
-        struct Kisi
-        {
-            public string Ad;
-            public string Soyad;
-            public string TcNo;
-            public string Gsm;
-            public string Email;
-            public DateTime DogumTarihi;
-            public Adres Adres;
-        }
 
 
-        private void PersonelKayit_Load(object sender, EventArgs e)
+        public PersonelKayit()
         {
-            // Ornek bir structer dan instance alinmasi
-            Kisi ahmet = new Kisi();
-            ahmet.Ad = "Ahmet";
-            ahmet.Soyad = "Yilmaz";
-            ahmet.TcNo = "321321321";
-            ahmet.Email = "ahmet@gmail.com";
-            ahmet.DogumTarihi = DateTime.Now.AddYears(-20);
-            ahmet.Adres.il = "adana";
-            ahmet.Adres.ilce = "Kozan";
-            ahmet.Adres.cadde = "Zafer cad";
-            ahmet.Adres.sokak = "Gul Sok";
-            ahmet.Adres.numara = "No:5 kat:2 D:3";
-
+            InitializeComponent();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -97,34 +88,30 @@ namespace PersonelTakip
             for (int i = 0; i < satilar.Length; i++)
             {
 
-                string yazilacakSatir = Adlar[i] + "-" + Soyadlar[i] + "-" + GsmLer[i] + Emailler[i] + "-" + TcNolar[i] + DogumTarihleri[i];
+                string yazilacakSatir = Adlar[i] + "-" + Soyadlar[i] + "-" + Gsmler[i] + Emailler[i] + "-" + TcNolar[i] + DogumTarihleri[i];
 
                 listBox1.Items.Add(yazilacakSatir);
             }
         }
 
-        DateTime dogumtarihi;
-        public PersonelKayit()
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            InitializeComponent();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            #region Ekrandan Degerleri Oku
+            #region Ekrandan degerleri okuma
+
 
             ad = txtAd.Text;
             soyad = txtSoyad.Text;
             gsm = txtGsm.Text;
             email = txtEmail.Text;
             tcno = txtTcNo.Text;
-            dogumtarihi = dateTimePicker1.Value;
 
-            // Yukaridaki hammaliyeden bizi kurtaran kodlar..
-
-
+            dogumTarihi = dateTimePicker1.Value;
             #endregion
-
             #region Gelen Verileri Kontrol Et
             if (ad.Length < 2)
             {
@@ -147,7 +134,7 @@ namespace PersonelTakip
                 MessageBox.Show("TcNo alani 11 karakter olmalidir..");
                 return;
             }
-            if (dogumtarihi.Year > 2005)
+            if (dogumTarihi.Year > 2005 && dogumTarihi.Year < DateTime.Now.Year)
             {
                 MessageBox.Show("Yaşin tutmadi .Buyude gel..");
                 return;
@@ -158,28 +145,35 @@ namespace PersonelTakip
                 return;
             }
             #endregion
-            #region Dosyaya Yazma
-            Kisi kisi = new Kisi();
-            kisi.Ad = txtAd.Text;
-            kisi.Soyad = txtSoyad.Text;
-            kisi.Email = txtEmail.Text;
-            kisi.Gsm = txtGsm.Text;
-            kisi.TcNo = txtTcNo.Text;
-            kisi.DogumTarihi = dateTimePicker1.Value;
+            #region Dosyaya yazma
 
-            Kisiler.Add(kisi);
+
             string path = @"Personel.txt";
 
             StreamWriter sw = File.AppendText(path);
-            string yazilacakSatir = kisi.Ad + ";" + kisi.Soyad + ";" + kisi.Gsm + ";" + kisi.Email + ";" + kisi.TcNo + ";" + kisi.DogumTarihi;
-
-            //sw.WriteLine(ad + ";" + soyad + ";" + gsm + ";" + email + ";" + tcno + ";" + dogumtarihi);
-
-            sw.WriteLine(yazilacakSatir);
+            sw.WriteLine(ad + ";" + soyad + ";" + gsm + ";" + email + ";" + tcno);
             sw.Close();
+
             #endregion
-            FormuTemizle();
+
+
         }
+
+        private void PersonelKayit_Load(object sender, EventArgs e)
+        {// Ornek bir structer dan instance alinmasi
+            Kisi ahmet = new Kisi();
+            ahmet.Ad = "Ahmet";
+            ahmet.Soyad = "Yilmaz";
+            ahmet.TcNo = "321321321";
+            ahmet.Email = "ahmet@gmail.com";
+            ahmet.DogumTarihi = DateTime.Now.AddYears(-20);
+            ahmet.Adres.il = "adana";
+            ahmet.Adres.ilce = "Kozan";
+            ahmet.Adres.cadde = "Zafer cad";
+            ahmet.Adres.sokak = "Gul Sok";
+            ahmet.Adres.numara = "No:5 kat:2 D:3";
+        }
+
         public void FormuTemizle()
         {
             txtAd.Text = "";
